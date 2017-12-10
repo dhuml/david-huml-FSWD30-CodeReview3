@@ -44,7 +44,7 @@ html {
 		main{
 			display:flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-between;
 			background-color: #0BA187;
 			flex:1;
 		}
@@ -54,17 +54,17 @@ html {
 			font-family: Arial;
 			font-size:40px;
 			color:#29464E;
-			margin:20px;
+			margin/*-bottom*/:80px;
 		}
 
 
 		.pictures {
 			display:inline-flex;
 			justify-content: space-around;
-			overflow:0;
 			align-items: center;	
 			min-height: auto;
 			flex-wrap:wrap;
+			margin-bottom:80px;
 			
 		}
 		
@@ -83,18 +83,23 @@ html {
 		#name, #mail{	
 			margin-top: 10px;
 			text-align:center;
+			color:white;
+			font-family: arial;
+			font-size: 25px;
+			font-weight: 700;
 		}
 
 		
 		#checkprice {
 			margin:20px;
-			font-size:20px;
-			padding:20px;
-			/*border:2px solid blue;*/
+			font-size:23px;
+			padding:15px;
+			border-radius:20px;
+			color:#2D4452;
+			font-weight: 700;
 		}
 
 		.formular {
-			/*border:1px solid black;*/
 			display:flex;
 			flex-direction: column;
 		}
@@ -109,9 +114,13 @@ html {
 		}
 
 		#calculate{
-			font-size: 20px;
+			font-size: 23px;
 			display:inline-block;
 			margin:25px;
+			padding:10px;
+			border-radius:20px;
+			color:#2D4452;
+			font-weight: 700;
 
 
 		}
@@ -132,11 +141,7 @@ html {
 		#container{
 			display:inline-flex;
 			justify-content: space-around;
-			/*overflow:0;*/
 			align-items: center;	
 			min-height: auto;
 			flex-wrap:wrap;
-			
-			border:1px solid black;
-		
 		}
