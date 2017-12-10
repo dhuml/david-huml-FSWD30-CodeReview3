@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="codereview3.css">
+	
+</head>
+<body>
+	
+	<header>
+		<div class="headline">
+			<span id="insurance">
+				Insurance
+			</span>
+			<span id="company">
+				Company
+			</span>
+		</div>
+	</header>
+	
+	<main>
+		<div id="container">
+			<div class="formular">
+				<div class="line">
+					<span>
+					Your Name:
+					</span>
+
+					<input type="text" class="inputfield" id="yourname">
+				</div>
+				<div class="line">
+					<span>
+					Age:
+					</span>
+					<input type="text" class="inputfield" id="age">
+				</div>
+				<div class="line">
+					<span>
+					Country:
+					</span>
+					<input type="text" class="inputfield" id="country">
+				</div>	
+				<div class="line">
+					<span>
+					Horsepower:
+					</span>
+					<input type="text" class="inputfield" id="horsepower">
+				</div>	
+		<button type="button" id="calculate">Calculate</button>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<p id="result">
+			
+		</p>
+	</footer>
+
+	<script>
+
+			
+
+			
+		function calculateInsurance() {
+
+			name = document.getElementById("yourname").value;
+			var age = Number(document.getElementById("age").value);
+			country = document.getElementById("country").value; 
+			var horse_power = Number(document.getElementById("horsepower").value);
+
+			console.log(name);
+			console.log(age);
+			console.log(country);
+			console.log(horse_power);
+
+		
+			insurance = Number(horse_power) * 100 / Number(age) + 150;
+			
+		
+
+			document.getElementById("result").innerHTML = "Hello " + name + " your insurance premiere is " + insurance +".";
+
+			console.log(insurance);	
+		}
+
+		// console.log(calculateInsurance(name, age, country, horse_power));
+
+
+		var btn = document.getElementById("calculate");
+		// btn.addEventListener("click", function(){calculateInsurance(name, age, country, horse_power)}, false);
+		btn.addEventListener("click",calculateInsurance);
+			
+
+
+
+	</script>
+</body>
+</html>
